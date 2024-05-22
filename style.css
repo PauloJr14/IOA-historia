@@ -1,0 +1,350 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    width: 90%;
+    margin: 0px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flexbox;
+    background-color: #ffab32;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 30px auto 20px;
+    font-size: 40px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.partesite {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 400px;
+    text-align: center;
+}
+  
+.partesite h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+  
+.partesite ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.partesite li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.partesite a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+  
+#olimpiadas a, #quemsomos a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.partesite a:hover {
+    transform: scale(1.1);
+}
+
+#instagram a::before {
+    content: '\1F4F7';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#whatsapp a::before {
+    content: '\1F4DE';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#email a::before {
+    content: '\1F4E7';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+table { 
+    border-collapse: collapse;
+}
+
+th,td { 
+    border: 1px solid #000;
+    padding: 8px; 
+    text-align: center;
+}
+
+th {
+    font-size: 18px;
+}
+
+td {
+    font-size: 15px;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+.partesite {
+    background: linear-gradient(270deg, #2196f3  , #f1ac37   );
+    background-size: 400% 400%;
+    animation: backgroundAnimation 20s infinite;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:470px){
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    #barrainicial {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    div ul {
+        display: none;
+    }
+
+    #barrasecundaria {
+        display: none;
+    }
+
+    #barraterciaria {
+        width: 250px;
+        margin: 0px auto;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header nav {
+        width: 70%;
+    }
+
+    nav h1 {
+        margin: 10px auto 10px;
+        font-size: 32px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    .partesite {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: none;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:471px) and (max-width:600px){
+    img {
+        width: 110px;
+        height: auto;
+    }
+    
+    #barrainicial {
+        width: 60%;
+        margin: 0px auto;
+    }
+
+    div ul {
+        display: none;
+    }
+
+    #barrasecundaria {
+        width: 80%;
+        margin: 0px auto;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #barraterciaria {
+        display: none;
+    }
+
+    header nav {
+        margin-left: 50px;
+    }
+
+    nav h1 {
+        margin: 15px auto 20px;
+        font-size: 33px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    .partesite {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: none;
+        padding-left: 30px;
+    }    
+}
+
+@media screen and (min-width:601px) and (max-width:760px){
+    img {
+        width: 120px;
+        height: auto;
+    }
+    
+    #barrainicial {
+        width: 70%;
+        margin: 0px auto;
+    }
+
+    div ul {
+        display: none;
+    }
+
+    #barrasecundaria {
+        width: 80%;
+        margin: 0px auto;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #barraterciaria {
+        display: none;
+    }
+
+    nav {
+        margin-left: 50px;
+    }
+
+    nav h1 {
+        margin: 15px auto 20px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:761px) and (max-width:920px){
+    img {
+        width: 150px;
+        height: auto;
+    }
+
+    #barrainicial {
+        width: 70%;
+        margin: 0px auto;
+    }    
+
+    #barrasecundaria {
+        display: none
+    }
+
+    #barraterciaria {
+        display: none;
+    }
+}
+
+@media screen and (min-width:921px) and (max-width:1100px){
+    img {
+        width: 150px;
+        height: auto;
+    }
+
+    #barrainicial {
+        width: 70%;
+        margin: 0px auto;
+    }    
+
+    #barrasecundaria {
+        display: none
+    }
+
+    #barraterciaria {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1101px){
+    img {
+        width: 170px;
+        height: auto;
+    }
+    
+    #barrainicial {
+        width: 70%;
+        margin: 0px auto;
+    }    
+
+    #barrasecundaria {
+        display: none
+    }
+
+    #barraterciaria {
+        display: none;
+    }
+}
